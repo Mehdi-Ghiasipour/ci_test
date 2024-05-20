@@ -1,5 +1,6 @@
 # CI/CD and Unit Testing Exercise Session
 
+dssd
 ## Getting Started
 1. **Git, the simple guide:** https://rogerdudler.github.io/git-guide/
 2. **Google Test Primer:** https://google.github.io/googletest/primer.html
