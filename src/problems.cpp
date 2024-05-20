@@ -41,8 +41,27 @@
 
 std::string balancedNum(unsigned long long int number)
 {
-  // your code here
-  return "";
+  std::string strnum = std::to_string (number);
+    std::string numStr = std::to_string(number);
+    int length = numStr.length();
+    int middle = length / 2;
+
+    int leftSum = 0;
+    int rightSum = 0;
+
+    for (int i = 0; i < middle; ++i) {
+        leftSum += numStr[i] - '0'; 
+    }
+
+    for (int i = middle + (length % 2); i < length; ++i) {
+        rightSum += numStr[i] - '0';
+    }
+
+    if (leftSum == rightSum) {
+        return "Balanced";
+    } else {
+        return "Not Balanced";
+    }  
 }
 
 // ********************************************************************************************************
